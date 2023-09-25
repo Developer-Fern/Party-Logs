@@ -129,7 +129,9 @@ const renderParties = async (parties) => {
 
 // init function
 const init = async () => {
-  // your code here
+
+const parties = await getAllParties()
+renderParties(parties)
 };
 
 init();
